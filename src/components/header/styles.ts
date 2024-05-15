@@ -5,10 +5,10 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
   justify-content: space-between;
+  align-items: center;
   height: 114px;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   padding: 0 10rem;
-  align-items: center;
   filter: drop-shadow(0px 3px 3px rgba(255, 0, 0, 0.53));
   list-style-type: none;
 
