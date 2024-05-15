@@ -46,6 +46,7 @@ export default createGlobalStyle`
     right: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 1)), url(${imgBackground}) no-repeat center center;
     filter: blur(1px);
+    opacity: 0.7;
     background-size: cover;
   }
 

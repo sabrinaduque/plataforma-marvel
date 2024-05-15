@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Container, Form, Logo, Settings } from "./styles"
 import { useNavigate } from 'react-router-dom';
 
-const SignIn = () => {
+const SignIn: React.FC = () => {
   const navigate = useNavigate()
   const [usuario, setUsuario] = useState('')
   const [password, setPassword] = useState('')
@@ -16,8 +16,7 @@ const SignIn = () => {
     <Container>
       <Form>
         <Logo>
-          <div className="square-logo"/>
-          <div className="label-logo">MARVEL</div>
+          <span className="label-logo">MARVEL</span>
         </Logo>
 
         <div className="header-form">

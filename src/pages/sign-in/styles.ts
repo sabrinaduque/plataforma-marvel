@@ -111,47 +111,27 @@ export const Form = styled.form`
 `
 
 export const Logo = styled.div`
-  position: relative;
-  padding-bottom: 24px;
+  font-family: 'Arial Black', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
 
   .label-logo {
-    position: relative;
     display: flex;
     justify-content: center;
-    font-size: 75px;
-    padding-top: 6px;
-    padding-left: 14px;
-  }
-
-  .square-logo {
-    position: absolute;
-    width: 177px;
-    height: 72px;
-    left: 30px;
+    align-items: center;
+    font-size: 65px;
+    height: 60px;
     background-color: ${({ theme }) => theme.COLORS.RED};
+    letter-spacing: -5px;
+    padding-right: 7px;
   }
 
   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-    padding-left: 100px;
-
     .label-logo {
-      display: inherit;
       font-size: 100px;
-    }
-
-    .square-logo {
-      width: 232px;
       height: 95px;
-      left: inherit;
-    }
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    padding-bottom: 12px;
-
-    .square-logo {
-      left: inherit;
-      left: -20px;
     }
   }
 `
@@ -165,7 +145,6 @@ export const Settings = styled.div`
   .checkbox-save-login-label {
     display: flex;
     align-items: center;
-    cursor: pointer;
     color: #84848D;
     font-size: 15px;
   }
