@@ -1,6 +1,15 @@
-const Comics = () => {
+import { Header } from '../../components'
+import { Container } from './styles'
+
+const Comics: React.FC = () => {
   return (
-    <div>Comics</div>
+    <Container>
+      <Header />
+
+      <span>
+        Comics
+      </span>
+    </Container>
   )
 }
 

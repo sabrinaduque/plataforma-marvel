@@ -1,6 +1,15 @@
-const Characters = () => {
+import { Header } from '../../components'
+import { Container } from './styles'
+
+const Characters: React.FC = () => {
   return (
-    <div>Characters</div>
+    <Container>
+      <Header />
+
+      <span>
+        Characters
+      </span>
+    </Container>
   )
 }
 
