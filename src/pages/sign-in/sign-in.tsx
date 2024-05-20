@@ -12,6 +12,10 @@ const SignIn: React.FC = () => {
     navigate('/characters')
   }
 
+  const handleSignOut = () => {
+    navigate('/signOut')
+  }
+
   return (
     <Container>
       <Form>
@@ -56,7 +60,7 @@ const SignIn: React.FC = () => {
 
         <div className="footer-form">
           <span>Ainda não tem o login?</span>
-          <span className="btn-register">Cadastre-se</span>
+          <span className="btn-register" onClick={handleSignOut}>Cadastre-se</span>
         </div>
       </Form>
     </Container>
