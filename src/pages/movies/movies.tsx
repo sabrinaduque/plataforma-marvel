@@ -1,14 +1,16 @@
-import { Header } from '../../components'
-import { Container } from './styles'
+import { Header, Carousel } from '../../components'
+import { Container, Content } from './styles'
+import data, { IDataMovie } from "../../data/data-movies"
 
 const Movies: React.FC = () => {
+  const dataMovie: IDataMovie = data
+
   return (
     <Container>
       <Header />
-
-      <span>
-        Movies
-      </span>
+      <Content>
+        <Carousel data={dataMovie}/>
+      </Content>
     </Container>
   )
 }
